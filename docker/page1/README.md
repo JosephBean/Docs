@@ -28,7 +28,7 @@ docker -v
 
 ### Table of Contents
 
-###### [0. Docker 알아보기](../../../)
+###### [0. Docker 알아보기](../)
 
 #### 1. Docker 설치
 

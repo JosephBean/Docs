@@ -58,7 +58,7 @@ docker commit -a "사용자명" -m "설명문" test-container test/centos:1.0
 
 ### Table of Contents
 
-###### [0. Docker 알아보기](../../../)
+###### [0. Docker 알아보기](../)
 
 ###### [1. Docker 설치](../page1)
 
