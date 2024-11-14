@@ -1,5 +1,9 @@
 # GIT과 GITHUB 이용하기 위한 CLI 
 
+### 참조 자료 링크
+> * [git](https://git-scm.com/)
+> * [github](https://github.com/)
+
 ## 로컬에 git 설정
 1. 사용자 이름 설정 (github 계정과 동일)
 ```bash
