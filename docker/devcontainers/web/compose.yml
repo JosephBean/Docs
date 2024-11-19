@@ -1,0 +1,14 @@
+services:
+  web:
+    image: httpd:2.4.62
+    container_name: web
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./work/:/usr/local/apache2/htdocs/:rw
+      - ./conf/httpd.conf:/usr/local/apache2/conf/httpd.conf:rw
+    environment:
+      - TZ=Asia/Seoul
+      - LC_ALL:en_US.UTF-8
+    # command: sleep infinity

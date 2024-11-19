@@ -1,0 +1,20 @@
+services:
+  mariadb:
+    image: mariadb:11.5.2
+    container_name: mariadb
+    restart: always
+    ports:
+      - 23306:3306
+    volumes:
+      - ./conf.d:/etc/mysql/conf.d:ro
+      - ./data:/var/lib/mysql:rw
+      - ./initdb.d:/docker-entrypoint-initdb.d:ro
+    environment:
+      - MYSQL_HOST=localhost
+      - MYSQL_PORT=3306
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_DATABASE=edu
+      - MYSQL_USER=study
+      - MYSQL_PASSWORD=study
+      - TZ=Asia/Seoul
+      - LC_ALL:en_US.UTF-8
